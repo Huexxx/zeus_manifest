@@ -400,5 +400,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor" name="zeus_nexus5_props" remote="Huexxx" revision="kk-mr0" />
+  <project path="vendor/huexxx" name="zeus_vendor_huexxx" remote="Huexxx" revision="kk-mr0" />
 
 </manifest>

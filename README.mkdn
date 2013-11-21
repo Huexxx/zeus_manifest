@@ -1,3 +1,3 @@
-<img src="https://raw.github.com/huexxx/android_manifest/kk-hue-v0/Huexxx.png">
+<img src="https://raw.github.com/Huexxx/zeus_manifest/kk-mr0/Huexxx.png">
 
-repo init -u https://github.com/huexxx/android_manifest.git -b kk-hue-v0
+repo init -u https://github.com/Huexxx/zeus_manifest.git -b kk-mr0
