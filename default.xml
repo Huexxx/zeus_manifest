@@ -3,15 +3,13 @@
 
   <remote  name="aosp"
            fetch="https://android-review.googlesource.com/" />
-  <remote  name="Huexxx"
-           fetch="git://github.com/Huexxx/" />
-  <remote  name="CyanogenMod"
-           fetch="git://github.com/CyanogenMod/" />
+  <remote  name="github"
+           fetch="git://github.com/" />
   <default revision="refs/tags/android-4.4_r1.2"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="zeus_build" groups="pdk" remote="Huexxx" revision="kk-mr0" >
+  <project path="build" name="Huexxx/zeus_build" groups="pdk" remote="github" revision="kk-mr0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -38,7 +36,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="zeus_device_lge_hammerhead" groups="device,hammerhead" remote="Huexxx" revision="kk-mr0" />
+  <project path="device/lge/hammerhead" name="Huexxx/zeus_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="kk-mr0" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -57,7 +55,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="android_external_busybox" remote="CyanogenMod" revision="cm-11.0" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-11.0" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
@@ -140,6 +138,8 @@
   <project path="external/jsr305" name="platform/external/jsr305" />
   <project path="external/junit" name="platform/external/junit" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" />
+  <project path="external/koush/Superuser" name="koush/Superuser" remote="github" revision="master" />
+  <project path="external/koush/Widgets" name="koush/Widgets" remote="github" revision="master" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" />
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
@@ -236,7 +236,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="zeus_frameworks_base" remote="Huexxx" revision="kk-mr0" />
+  <project path="frameworks/base" name="Huexxx/zeus_frameworks_base" remote="github" revision="kk-mr0" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -319,7 +319,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="zeus_packages_apps_settings" remote="Huexxx" revision="kk-mr0" />
+  <project path="packages/apps/Settings" name="Huexxx/zeus_packages_apps_settings" remote="github" revision="kk-mr0" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -344,7 +344,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/services/Telephony" name="zeus_packages_services_telephony" remote="Huexxx" revision="kk-mr0" />
+  <project path="packages/services/Telephony" name="Huexxx/zeus_packages_services_telephony" remote="github" revision="kk-mr0" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -385,7 +385,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
-  <project path="system/extras" name="zeus_system_extras" groups="pdk" remote="Huexxx" revision="kk-mr0" />
+  <project path="system/extras" name="Huexxx/zeus_system_extras" groups="pdk" remote="github" revision="kk-mr0" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
@@ -401,7 +401,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor" name="zeus_nexus5_props" remote="Huexxx" revision="kk-mr0" />
-  <project path="vendor/huexxx" name="zeus_vendor_huexxx" remote="Huexxx" revision="kk-mr0" />
+  <project path="vendor" name="Huexxx/zeus_nexus5_props" remote="github" revision="kk-mr0" />
+  <project path="vendor/huexxx" name="Huexxx/zeus_vendor_huexxx" remote="github" revision="kk-mr0" />
 
 </manifest>
