@@ -9,7 +9,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="Huexxx/zeus_build" groups="pdk" remote="github" revision="kk-mr1" >
+  <project path="build" name="Huexxx/zeus_build" groups="pdk" remote="github" revision="f2fs" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -36,7 +36,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="Huexxx/zeus_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="kk-mr1" />
+  <project path="device/lge/hammerhead" name="Huexxx/zeus_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="f2fs" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -105,6 +105,7 @@
   <project path="external/esd" name="platform/external/esd" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" />
+  <project path="external/f2fs-tools" name="CyanogenMod/android_external_f2fs-tools" remote="github" revision="cm-11.0" />
   <project path="external/fdlibm" name="platform/external/fdlibm" />
   <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
@@ -202,7 +203,7 @@
   <project path="external/robolectric" name="platform/external/robolectric" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project path="external/sepolicy" name="Huexxx/zeus_external_sepolicy" groups="pdk" remote="github" revision="kk-mr1" />
+  <project path="external/sepolicy" name="Huexxx/zeus_external_sepolicy" groups="pdk" remote="github" revision="f2fs" />
   <project path="external/sfntly" name="platform/external/sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" />
   <project path="external/skia" name="platform/external/skia" />
@@ -385,7 +386,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="Huexxx/zeus_system_core" groups="pdk" remote="github" revision="kk-mr1" />
+  <project path="system/core" name="Huexxx/zeus_system_core" groups="pdk" remote="github" revision="f2fs" />
   <project path="system/extras" name="Huexxx/zeus_system_extras" groups="pdk" remote="github" revision="kk-mr1" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
