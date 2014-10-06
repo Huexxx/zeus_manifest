@@ -37,7 +37,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="Huexxx/zeus_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="kk-mr2.2" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
+  <project path="device/lge/hammerhead-kernel" name="Huexxx/zeus_device_lge_hammerhead-kernel" groups="device,hammerhead" remote="github" revision="kk-mr2.2" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
